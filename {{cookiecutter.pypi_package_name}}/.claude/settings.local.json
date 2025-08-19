@@ -1,8 +1,4 @@
 {
-    "enabledMcpjsonServers": [
-        "github",
-        "repomix",
-        "language-server"
-    ],
+    "enabledMcpjsonServers": ["github", "repomix", "language-server"],
     "enableAllProjectMcpServers": true
 }

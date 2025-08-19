@@ -52,36 +52,33 @@ We welcome contributions! Please see our
 #### Prerequisites
 * [Docker](https://www.docker.com/get-started/)
 * [VSCode](https://code.visualstudio.com/download)/[Cursor](https://cursor.com/downloads) (or any IDE with [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) support)
+* [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+* [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 
 #### Steps
 
-Either click the badge (VSCode only)  
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/{{ cookiecutter.__gh_slug }})  
-or (Cursor/VSCode)
+* `git clone https://github.com/{{ cookiecutter.__gh_slug }}.git`
+* Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
 
-1. `git clone https://github.com/{{ cookiecutter.__gh_slug }}.git`
-2. Open the repository in your IDE of choice
-3. `cmd+shift+p`/`ctrl+shift+p`
-4. Type "reopen"
-5. Choose "Dev Containers: Reopen in Container"
+  ```bash
+  echo "GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>" > ./.devcontainer/.env
+  ```
 
-   This will automatically:
+* Open using VSCode (or Cursor):
+  * `ctrl+shift+p`/`cmd+shift+p`
+  * Type "Reopen"
+  * Select `Reopen in Container`
+  * Wait until everything finished loading/running
 
-    * Build and start a devcontainer with binary requirements
-    * Install the `pre-commit` hooks
-    * Use `uv` to install python and all python dependencies into a local `.venv`
-   () Install a few MCP servers
+* Init commit:
 
-   The first time it will fail and prompt you for 3 things:
+  ```bash
+  git add .
+  git commit -m "init: cookiecutter"
+  git push
+  ```
 
-    * Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
-
-    ```sh
-    GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>
-    ```
-
-    * [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
-    * [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
+* Start using your new repo!
 
 #### MCP
 
@@ -109,7 +106,6 @@ This project is licensed under the MIT License - see the
 
 * Built with modern Python tooling ([astral.sh stack](https://github.com/astral-sh), [tox stack](https://github.com/tox-dev))
 * Created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project template (fork of [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage))
-
 
 ## 📊 Project Status
 

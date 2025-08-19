@@ -71,4 +71,4 @@ link-mode = "copy"
 python = "./.venv"
 
 [tool.ty.src]
-exclude = "./.ties/**"
+exclude = [ "./.ties/**" ]

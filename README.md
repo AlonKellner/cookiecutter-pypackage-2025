@@ -35,12 +35,12 @@
     uvx cookiecutter https://github.com/AlonKellner/cookiecutter-pypackage-2025.git
     ```
 
-*   Upload it to GitHub:
+*   Create a GitHub repo:
 
     ```bash
     cd ./your-new-repo
     gh auth login
-    gh repo create "Your Repo Name" --source=. --public --push
+    gh repo create "Your Repo Name" --source=. --public
     ```
 
 *   Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
@@ -53,7 +53,7 @@
     *   `ctrl+shift+p`/`cmd+shift+p`
     *   Type "Reopen"
     *   Select `Reopen in Container`
-    *   Wait for the container to start
+    *   Wait until everything finished loading/running
 
 *   Init commit:
 

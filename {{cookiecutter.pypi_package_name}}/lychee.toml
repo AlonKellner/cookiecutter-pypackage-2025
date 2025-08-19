@@ -2,7 +2,7 @@ exclude = [
   '^https://numpydoc.readthedocs\.io.*', 
   '^https://.*pepy\.tech*', 
   '^https://github\.com/{{cookiecutter.__gh_slug}}*', 
-  '^https://{{ cookiecutter.github_username }}\.github\.io/{{ cookiecutter.project_slug }}*'
+  '^https://{{ cookiecutter.github_username }}\.github\.io/{{ cookiecutter.project_slug }}*',
 ]
 exclude_path = [
   "uv.lock",
