@@ -5,7 +5,7 @@ __pycache__/
 *.pyspy
 *.pickle
 .env/
-# .env*
+.env*
 node_modules/
 .tox/
 *mcp.json
