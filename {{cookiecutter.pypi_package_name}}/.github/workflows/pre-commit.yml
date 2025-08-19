@@ -1,3 +1,4 @@
+{% raw %}
 name: pre-commit
 on:
   workflow_call:
@@ -6,7 +7,7 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     container:
-      image: "${{ vars.DOCKERHUB_USERNAME }}/{{ cookiecutter.pypi_package_name }}-ci:latest"
+      image: "${{ vars.DOCKERHUB_USERNAME }}/{% endraw %}{{ cookiecutter.pypi_package_name }}{% raw %}-ci:latest"
       options: --user root
       env:
         GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -25,3 +26,4 @@ jobs:
         run: .devcontainer/postCreateCommand
       - name: postStartCommand & pre-commit all
         run: .devcontainer/postStartCommand
+{% endraw %}

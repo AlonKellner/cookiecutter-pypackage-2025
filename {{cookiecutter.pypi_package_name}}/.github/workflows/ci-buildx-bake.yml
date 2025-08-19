@@ -1,3 +1,4 @@
+{% raw %}
 name: CI Buildx Bake
 # This workflow is now callable by other workflows.
 on:
@@ -25,3 +26,4 @@ jobs:
           files: .devcontainer/bake.hcl
           set: |
             *.platform=linux/amd64
+{% endraw %}
