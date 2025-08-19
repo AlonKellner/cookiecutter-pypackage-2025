@@ -75,7 +75,7 @@ Before any Edit Attempt:
 - a descriptive line:
 
   ```text
-  `[EDIT]` `<description>`, attempt #`<index>`: `STARTING`  
+  `[EDIT]` `<description>`: `STARTING`  
   ```
 
 After any Edit Attempt:  
@@ -83,7 +83,7 @@ After any Edit Attempt:
 - a summary line:
 
   ```text
-  `[EDIT]` `<description>`, attempt #`<index>`: `<status>`  
+  `[EDIT]` `<description>`: `<status>`  
   ```
 
   where `<status>` is `SUCCESS` or `FAILED`

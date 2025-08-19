@@ -30,7 +30,7 @@ classifiers = [
 dynamic = [ "version" ]
 dependencies = [ "typer" ]
 
-urls = { Homepage = "https://github.com/{{cookiecutter.__gh_slug}}.git", Repository = "https://github.com/{{cookiecutter.__gh_slug}}.git", Bugs = "https://github.com/{{cookiecutter.__gh_slug}}/issues", Changelog = "https://github.com/{{cookiecutter.__gh_slug}}/blob/master/changelog.md" }
+urls = { Homepage = "https://github.com/{{cookiecutter.__gh_slug}}.git", Repository = "https://github.com/{{cookiecutter.__gh_slug}}.git", Bugs = "https://github.com/{{cookiecutter.__gh_slug}}/issues", Changelog = "https://github.com/{{cookiecutter.__gh_slug}}/blob/main/CHANGELOG.md" }
 
 scripts.{{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"
 
