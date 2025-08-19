@@ -22,29 +22,44 @@
 
 ## Quickstart
 
-[Install uv](https://docs.astral.sh/uv/getting-started/installation/) and [gh](https://docs.github.com/en/github-cli) if you haven't installed them yet.
+### Prerequisites
+-   [uv](https://docs.astral.sh/uv/getting-started/installation/)
+-   [gh](https://docs.github.com/en/github-cli)
+-   [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+-   [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 
-Generate a Python package project:
+### Steps
+*   Generate a Python package project:
 
-```bash
-uvx cookiecutter https://github.com/AlonKellner/cookiecutter-pypackage-2025.git
-```
+    ```bash
+    uvx cookiecutter https://github.com/AlonKellner/cookiecutter-pypackage-2025.git
+    ```
 
-Upload it to GitHub:
+*   Upload it to GitHub:
 
-```bash
+    ```bash
+    cd ./your-new-repo
+    git init
+    git add .
+    git commit -m "init: cookiecutter"
+    gh auth login
+    gh repo create "Your Repo Name" --source=. --public --push
+    ```
 
-cd ./your-new-repo
-git init
-git add .
-git commit -m "init: cookiecutter"
-gh auth login
-gh repo create "Your Repo Name" --source=. --public --push
-```
+*   Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
 
-Open using VSCode (or Cursor).
+    ```bash
+    echo "GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>" > ./.devcontainer/.env
+    ```
 
-Then:
+*   Open using VSCode (or Cursor):
+    *   `ctrl+shift+p`/`cmd+shift+p`
+    *   Type "Reopen"
+    *   Select `Reopen in Container`
+
+*   Start using your new repo!
+
+### Optional Steps
 
 *   [Register](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives) your project with PyPI.
 *   Release your package by pushing a new tag to master.
