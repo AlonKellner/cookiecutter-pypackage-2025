@@ -8,6 +8,6 @@ __pycache__/
 .env*
 node_modules/
 .tox/
-# *mcp.json
+*mcp.json
 .coverage*
 htmlcov/
