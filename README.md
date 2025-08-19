@@ -11,7 +11,7 @@
 *   Testing setup with pytest
 *   GitHub Actions testing: Setup to easily test for Python 3.10, 3.11, 3.12, and 3.13
 *   Auto-release to [PyPI](https://pypi.python.org/pypi) when you push a new tag to master (optional)
-*   Command line interface using Typer
+*   Command line interface using [Typer](https://typer.tiangolo.com/)
 *   [astral.sh](https://github.com/astral-sh) stack ([uv](https://docs.astral.sh/uv/), [ruff](https://docs.astral.sh/ruff/), [ty](https://docs.astral.sh/ty/))
 
 ## **2025 EXTRA FEATURES**
