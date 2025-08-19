@@ -22,7 +22,7 @@
 
 ## Quickstart
 
-[Install uv](https://docs.astral.sh/uv/getting-started/installation/) if you haven't installed it yet.
+[Install uv](https://docs.astral.sh/uv/getting-started/installation/) and [gh](https://docs.github.com/en/github-cli) if you haven't installed them yet.
 
 Generate a Python package project:
 
@@ -30,9 +30,22 @@ Generate a Python package project:
 uvx cookiecutter https://github.com/AlonKellner/cookiecutter-pypackage-2025.git
 ```
 
+Upload it to GitHub:
+
+```bash
+
+cd ./your-new-repo
+git init
+git add .
+git commit -m "init: cookiecutter"
+gh auth login
+gh repo create "Your Repo Name" --source=. --public --push
+```
+
+Open using VSCode (or Cursor).
+
 Then:
 
-*   Create a repo and put it there.
 *   [Register](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives) your project with PyPI.
 *   Release your package by pushing a new tag to master.
 *   To activate the docs using github-pages:
