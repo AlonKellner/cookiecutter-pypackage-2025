@@ -5,7 +5,8 @@
 {{ cookiecutter.project_short_description }}
 
 ## 📖 Usage
-```
+
+```python
 import {{ cookiecutter.project_slug }}
 ```
 

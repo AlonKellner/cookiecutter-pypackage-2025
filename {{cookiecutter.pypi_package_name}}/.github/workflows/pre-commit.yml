@@ -1,5 +1,4 @@
-{% raw %}
-name: pre-commit
+{% raw %}name: pre-commit
 on:
   workflow_call:
   workflow_dispatch:

@@ -1,6 +1,6 @@
 """Example functionality."""
 
+
 def example() -> None:
-    """Example."""
+    """Do nothing, for example."""
     pass
- 

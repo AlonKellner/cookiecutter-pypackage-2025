@@ -13,12 +13,12 @@
 [![Cursor](https://img.shields.io/static/v1?label=-&message=Cursor&color=black)](https://cursor.com/downloads)
 [![Claude Code](https://img.shields.io/static/v1?label=-&message=Claude%20Code&color=d77253)](https://www.anthropic.com/claude-code)
 
-
 {{ cookiecutter.project_short_description }}
 
 ## Features
 
 * TODO
+
 ## 🚀 Quick Start
 
 ### Installation
@@ -39,8 +39,8 @@ pip install -e .
 
 ## 📖 Documentation
 
-- [User Guide](docs/user-guide.md) - Complete usage instructions
-- [Examples](docs/examples.md) - Common use cases and examples
+* [User Guide](docs/user-guide.md) - Complete usage instructions
+* [Examples](docs/examples.md) - Common use cases and examples
 
 ## 🤝 Contributing
 
@@ -50,8 +50,8 @@ We welcome contributions! Please see our
 ### Development Setup
 
 #### Prerequisites
-- [Docker](https://www.docker.com/get-started/)
-- [VSCode](https://code.visualstudio.com/download)/[Cursor](https://cursor.com/downloads) (or any IDE with [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) support)
+* [Docker](https://www.docker.com/get-started/)
+* [VSCode](https://code.visualstudio.com/download)/[Cursor](https://cursor.com/downloads) (or any IDE with [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) support)
 
 #### Steps
 
@@ -67,21 +67,21 @@ or (Cursor/VSCode)
 
    This will automatically:
 
-   - Build and start a devcontainer with binary requirements
-   - Install the `pre-commit` hooks
-   - Use `uv` to install python and all python dependencies into a local `.venv`
-   - Install a few MCP servers
+    * Build and start a devcontainer with binary requirements
+    * Install the `pre-commit` hooks
+    * Use `uv` to install python and all python dependencies into a local `.venv`
+   () Install a few MCP servers
 
    The first time it will fail and prompt you for 3 things:
 
-- Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
+    * Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
 
-  ```sh
-  GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>
-  ```
+    ```sh
+    GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>
+    ```
 
-- [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
-- [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
+    * [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+    * [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 
 #### MCP
 
@@ -107,16 +107,16 @@ This project is licensed under the MIT License - see the
 
 ## 🙏 Acknowledgments
 
-- Built with modern Python tooling ([astral.sh stack](https://github.com/astral-sh), [tox stack](https://github.com/tox-dev))
-- Created with [Cookiecutter](https://github.com/audreyfeldroy/cookiecutter) and the [AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project template (fork of [AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025))
+* Built with modern Python tooling ([astral.sh stack](https://github.com/astral-sh), [tox stack](https://github.com/tox-dev))
+* Created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project template (fork of [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage))
 
 
 ## 📊 Project Status
 
-- **Development Status**: Alpha
-- **Python Support**: 3.10+
-- **License**: MIT
-- **Maintainer**: [{{ cookiecutter.full_name }}](mailto:{{ cookiecutter.email }})
+* **Development Status**: Alpha
+* **Python Support**: 3.10+
+* **License**: MIT
+* **Maintainer**: [{{ cookiecutter.full_name }}](mailto:{{ cookiecutter.email }})
 
 ---
 

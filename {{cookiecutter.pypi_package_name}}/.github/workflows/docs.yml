@@ -1,5 +1,4 @@
-{% raw %}
-name: docs
+{% raw %}name: docs
 on:
   push:
     branches:

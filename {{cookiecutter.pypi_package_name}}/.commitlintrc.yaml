@@ -6,7 +6,8 @@ rules:
   type-enum:
     - 2
     - always
-    - - 'feat' # A new feature
+    - - 'init' # initial commits of the repository
+      - 'feat' # A new feature
       - 'fix' # A bug fix
       - 'docs' # Documentation only changes
       - 'style' # Changes that do not affect the meaning of the code (white-space, formatting, etc)

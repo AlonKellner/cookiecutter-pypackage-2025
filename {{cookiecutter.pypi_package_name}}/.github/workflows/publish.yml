@@ -1,5 +1,4 @@
-{% raw %}
-name: Publish PyPI
+{% raw %}name: Publish PyPI
 on:
   push:
     tags:

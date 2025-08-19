@@ -39,9 +39,6 @@
 
     ```bash
     cd ./your-new-repo
-    git init
-    git add .
-    git commit -m "init: cookiecutter"
     gh auth login
     gh repo create "Your Repo Name" --source=. --public --push
     ```
@@ -56,6 +53,15 @@
     *   `ctrl+shift+p`/`cmd+shift+p`
     *   Type "Reopen"
     *   Select `Reopen in Container`
+    *   Wait for the container to start
+
+*   Init commit:
+
+    ```bash
+    git add .
+    git commit -m "init: cookiecutter"
+    git push
+    ```
 
 *   Start using your new repo!
 

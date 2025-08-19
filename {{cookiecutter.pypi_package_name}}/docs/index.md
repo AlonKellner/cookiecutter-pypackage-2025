@@ -20,10 +20,10 @@ uv pip install -e .
 ```
 
 ### Basic Usage
-```
+
+```python
 import {{ cookiecutter.project_slug }}
 ```
-
 
 ## 📖 Advanced docs
 

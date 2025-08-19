@@ -1,5 +1,4 @@
-{% raw %}
-name: CI
+{% raw %}name: CI
 on:
   push:
     branches:
