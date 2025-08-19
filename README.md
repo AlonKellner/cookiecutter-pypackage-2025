@@ -1,8 +1,5 @@
 # Cookiecutter PyPackage 2025
 
-[![PyPI version](https://img.shields.io/pypi/v/cookiecutter-pypackage.svg)](https://pypi.python.org/pypi/cookiecutter-pypackage)
-[![PyPI downloads](https://img.shields.io/pypi/dm/cookiecutter-pypackage.svg)](https://pypi.python.org/pypi/cookiecutter-pypackage)
-
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a Python package.
 
 *   GitHub repo: [https://github.com/audreyfeldroy/cookiecutter-pypackage/](https://github.com/audreyfeldroy/cookiecutter-pypackage/)
@@ -21,28 +18,28 @@
 *   Modern tooling ([tox](https://tox.wiki/en/4.28.4/), [typos](https://github.com/crate-ci/typos), [ties](https://alonkellner.com/ties/), [commitlint](https://commitlint.js.org/), [mkdocs-material](https://squidfunk.github.io/mkdocs-material/))
 *   Security ([devcontainers](https://code.visualstudio.com/docs/devcontainers/containers), [pip-audit](https://github.com/pypa/pip-audit), [trivy](https://trivy.dev/latest/))
 *   Formatters & Linters for all file types ([biomejs](https://biomejs.dev/), [yamlfmt](https://github.com/google/yamlfmt) [taplo](https://taplo.tamasfe.dev/), [rumdl](https://docs.rs/rumdl/latest/rumdl/), [lychee](https://lychee.cli.rs/))
-*   AI Agent Supercharged ([Cursor](), [MCP](http://modelcontextprotocol.io/docs/getting-started/intro))
+*   AI Agent Supercharged ([Cursor](https://docs.cursor.com/en/welcome), [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview), [MCP](http://modelcontextprotocol.io/docs/getting-started/intro), [lintok](https://github.com/AlonKellner/lintok))
 
 ## Quickstart
 
-Install the latest Cookiecutter if you haven't installed it yet:
-
-```bash
-pip install -U cookiecutter
-```
+[Install uv](https://docs.astral.sh/uv/getting-started/installation/) if you haven't installed it yet.
 
 Generate a Python package project:
 
 ```bash
-cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
+uvx cookiecutter https://github.com/AlonKellner/cookiecutter-pypackage-2025.git
 ```
 
 Then:
 
 *   Create a repo and put it there.
 *   [Register](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives) your project with PyPI.
-*   Add the repo to your [Read the Docs](https://readthedocs.io/) account + turn on the Read the Docs service hook.
 *   Release your package by pushing a new tag to master.
+*   To activate the docs using github-pages:
+    * Go to your repository on GitHub
+    * `Settings -> Pages -> Build and deployment -> Branch`
+    * Select `gh-pages`
+    * Open your docs under `https://your-username.github.com/your-repo-name`
 
 ## Not Exactly What You Want?
 
