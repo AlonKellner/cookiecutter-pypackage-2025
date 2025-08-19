@@ -3,7 +3,7 @@
 import typer
 from rich.console import Console
 
-from {{cookiecutter.project_slug}} import utils
+from ._utils import example
 
 app = typer.Typer()
 console = Console()
@@ -15,7 +15,7 @@ def main():
     console.print("Replace this message by putting your code into "
                "{{cookiecutter.project_slug}}.cli.main")
     console.print("See Typer documentation at https://typer.tiangolo.com/")
-    utils.do_something_useful()
+    example()
 
 
 if __name__ == "__main__":

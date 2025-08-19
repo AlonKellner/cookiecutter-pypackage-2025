@@ -1,22 +1,11 @@
-#!/usr/bin/env python
-import pytest
-
-"""Tests for `{{ cookiecutter.project_slug }}` package."""
-
-# from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+"""The first test of the repository."""
 
 
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
+def test_version_exists() -> None:
+    """A test that ensures importing src succeeds and that there is a version."""
+    import sys  # noqa: PLC0415
 
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyfeldroy/cookiecutter-pypackage')
+    print(sys.path)
+    from {{ cookiecutter.project_slug }} import __version__  # noqa: PLC0415
 
-
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+    assert __version__ is not None
