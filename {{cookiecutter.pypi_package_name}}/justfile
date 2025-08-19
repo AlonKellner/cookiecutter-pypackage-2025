@@ -1,3 +1,4 @@
+{% raw %}
 set positional-arguments
 
 alias p := pre-commit
@@ -21,3 +22,4 @@ test *ARGS:
 # bump the version (major/minor/patch/alpha)
 bump *ARGS:
     hatch version {{ARGS}}
+{% endraw %}
