@@ -1,4 +1,4 @@
-# Cookiecutter PyPackage
+# Cookiecutter PyPackage 2025
 
 [![PyPI version](https://img.shields.io/pypi/v/cookiecutter-pypackage.svg)](https://pypi.python.org/pypi/cookiecutter-pypackage)
 [![PyPI downloads](https://img.shields.io/pypi/dm/cookiecutter-pypackage.svg)](https://pypi.python.org/pypi/cookiecutter-pypackage)
@@ -15,6 +15,13 @@
 *   GitHub Actions testing: Setup to easily test for Python 3.10, 3.11, 3.12, and 3.13
 *   Auto-release to [PyPI](https://pypi.python.org/pypi) when you push a new tag to master (optional)
 *   Command line interface using Typer
+*   [astral.sh](https://github.com/astral-sh) stack ([uv](https://docs.astral.sh/uv/), [ruff](https://docs.astral.sh/ruff/), [ty](https://docs.astral.sh/ty/))
+
+## **2025 EXTRA FEATURES**
+*   Modern tooling ([tox](https://tox.wiki/en/4.28.4/), [typos](https://github.com/crate-ci/typos), [ties](https://alonkellner.com/ties/), [commitlint](https://commitlint.js.org/), [mkdocs-material](https://squidfunk.github.io/mkdocs-material/))
+*   Security ([devcontainers](https://code.visualstudio.com/docs/devcontainers/containers), [pip-audit](https://github.com/pypa/pip-audit), [trivy](https://trivy.dev/latest/))
+*   Formatters & Linters for all file types ([biomejs](https://biomejs.dev/), [yamlfmt](https://github.com/google/yamlfmt) [taplo](https://taplo.tamasfe.dev/), [rumdl](https://docs.rs/rumdl/latest/rumdl/), [lychee](https://lychee.cli.rs/))
+*   AI Agent Supercharged ([Cursor](), [MCP](http://modelcontextprotocol.io/docs/getting-started/intro))
 
 ## Quickstart
 
