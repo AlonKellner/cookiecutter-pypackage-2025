@@ -1,4 +1,5 @@
 """The first tests of the repository."""
+
 from {{ cookiecutter.project_slug }} import __version__, example
 
 
