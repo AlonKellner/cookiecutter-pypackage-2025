@@ -106,8 +106,8 @@ of a violation, lower rungs on the ladder may be skipped.
       warning, or the first incidence of a more serious violation.
 
    2) Consequence: A private, written warning with a time-limited cooldown
-      period designed to underscore the seriousness of the situation and give the
-      community members involved time to process the incident. The cooldown
+      period designed to underscore the seriousness of the situation and give
+      the community members involved time to process the incident. The cooldown
       period may be limited to particular communication channels or interactions
       with particular community members.
 
@@ -137,8 +137,8 @@ of a violation, lower rungs on the ladder may be skipped.
 
    2) Consequence: Access to all community spaces, tools, and communication
       channels is removed. In general, permanent bans should be rarely used,
-      should have strong reasoning behind them, and should only be resorted to if
-      working through other remedies has failed to change the behavior.
+      should have strong reasoning behind them, and should only be resorted to
+      if working through other remedies has failed to change the behavior.
 
    3) Repair: There is no possible repair in cases of this severity.
 
