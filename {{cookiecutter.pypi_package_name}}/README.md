@@ -61,7 +61,7 @@ We welcome contributions! Please see our
 * Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
 
   ```bash
-  echo "GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>" > ./.devcontainer/.env
+  echo "GITHUB_PERSONAL_ACCESS_TOKEN=<token-here>" > ./.devcontainer/.env
   ```
 
 * Open using VSCode (or Cursor):
@@ -105,9 +105,9 @@ This project is licensed under the MIT License - see the
 ## 🙏 Acknowledgments
 
 * Built with modern Python tooling ([astral.sh stack](https://github.com/astral-sh), [tox stack](https://github.com/tox-dev))
-* Created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the
-[AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project template
-(fork of [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage))
+* Created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and
+  the [AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project
+  template (fork of [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage))
 
 ## 📊 Project Status
 

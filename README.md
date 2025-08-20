@@ -46,7 +46,7 @@
 *   Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
 
     ```bash
-    echo "GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>" > ./.devcontainer/.env
+    echo "GITHUB_PERSONAL_ACCESS_TOKEN=<token-here>" > ./.devcontainer/.env
     ```
 
 *   Open using VSCode (or Cursor):
