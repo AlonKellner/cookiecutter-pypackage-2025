@@ -1,11 +1,12 @@
-"""The first test of the repository."""
+"""The first tests of the repository."""
+from {{ cookiecutter.project_slug }} import __version__, example
 
 
 def test_version_exists() -> None:
-    """A test that ensures importing src succeeds and that there is a version."""
-    import sys  # noqa: PLC0415
-
-    print(sys.path)
-    from {{ cookiecutter.project_slug }} import __version__  # noqa: PLC0415
-
+    """Ensure that there is a version."""
     assert __version__ is not None
+
+
+def test_example() -> None:
+    """Ensure that the example function works."""
+    example()

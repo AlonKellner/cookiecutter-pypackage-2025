@@ -62,6 +62,7 @@
 		"--hostname=${containerWorkspaceFolderBasename}_vsc",
 		"--network=${containerWorkspaceFolderBasename}",
 		"--env-file=.devcontainer/.env",
-		"--shm-size=2g"
+		"--shm-size=2g",
+		"--add-host=host.docker.internal:host-gateway"
 	]
 }

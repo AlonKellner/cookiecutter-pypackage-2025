@@ -105,7 +105,9 @@ This project is licensed under the MIT License - see the
 ## 🙏 Acknowledgments
 
 * Built with modern Python tooling ([astral.sh stack](https://github.com/astral-sh), [tox stack](https://github.com/tox-dev))
-* Created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project template (fork of [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage))
+* Created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the 
+[AlonKellner/cookiecutter-pypackage-2025](https://github.com/AlonKellner/cookiecutter-pypackage-2025) project template 
+(fork of [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage))
 
 ## 📊 Project Status
 
