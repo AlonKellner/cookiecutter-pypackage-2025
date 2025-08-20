@@ -36,6 +36,7 @@ RUN --mount=type=cache,dst=/home/vscode/.cache/ DEBIAN_FRONTEND=noninteractive \
     chmod +x $HOME/.local/bin/lychee && lychee --version && \
     echo go && ./install-go.sh && go version && \
     echo mcp-language-server && go install github.com/isaacphi/mcp-language-server@latest && mcp-language-server --help && \
+    echo glow && go install github.com/charmbracelet/glow@latest && glow --version && \
     echo DONE
 
 WORKDIR /home/vscode

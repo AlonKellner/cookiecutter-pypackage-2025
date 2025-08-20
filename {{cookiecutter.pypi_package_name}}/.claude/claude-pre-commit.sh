@@ -8,7 +8,7 @@ output=$(claude -p "/pre-commit" 2>&1)
 exit_code=$?
 
 # Always print the original output from the command so the user can see it.
-echo "$output"
+echo "$output" | glow -
 
 # --- Main Logic ---
 

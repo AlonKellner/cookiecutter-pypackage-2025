@@ -30,11 +30,17 @@ the diff that lack corresponding tests.
 
 **Output Rules**:
 
-1. On success, respond **ONLY** with the word: `[PASS]`
-2. If issues are found or fixes were made, provide a list of one or
+- Only markdown
+- On success, respond **ONLY** with the word:
+
+    ```markdown
+    # [PASS]
+    ```
+
+- If issues are found or fixes were made, provide a list of one or
     more structured blocks below.
-3. **IGNORE** all stylistic issues (formatting, conventions, etc.).
-4. **Respect Ignore Comments**: Do not report issues on lines ending
+- **IGNORE** all stylistic issues (formatting, conventions, etc.).
+- **Respect Ignore Comments**: Do not report issues on lines ending
     with `# type: ignore` or `# ai: ignore`. For scoped ignores like
 
 `# ai: ignore[security]`, only skip reporting issues of that specific type.
@@ -45,8 +51,8 @@ the diff that lack corresponding tests.
 
 `[CRITICAL]` - For severe issues needing manual review.
 
-````text
-[CRITICAL]
+````markdown
+`[CRITICAL]`
 A brief, high-confidence description of the complex issue
 (e.g., this looks like a potential SQL injection vulnerability).
 ```python
@@ -61,8 +67,8 @@ A brief, high-confidence description of the complex issue
 
 `[SUGGESTION]` - For simple, encapsulated improvements.
 
-````text
-[SUGGESTION]
+````markdown
+`[SUGGESTION]`
 This can be simplified using a single expression.
 ```diff
  ┌──┌──┌─ path/to/file.py:46:50
@@ -82,16 +88,16 @@ This can be simplified using a single expression.
 
 `[FIXED]` - Reports a trivial fix that was automatically applied.
 
-````text
-[FIXED]
+````markdown
+`[FIXED]`
 Automatically fixed a typo in a comment.
 ```diff
- ┌──┌──┌─ path/to/file.py:89
- │--│++│
- │88│88│ # Unchanged lines
--│89│  │ # This function processes datta.
-+│  │89│ # This function processes data.
- │90│90│ # More unchanged lines
- │--│++│
+ ┌───┌───┌─ path/to/file.py:89
+ │---│+++│
+ │ 99│ 99│ # Unchanged lines
+-│100│   │ # This function processes datta.
++│   │100│ # This function processes data.
+ │101│101│ # More unchanged lines
+ │---│+++│
 ```
 ````
