@@ -1,6 +1,6 @@
 # Instructions
 
-## Tooling
+## CLIs
 
 This python (3.13) repo uses the astral.sh stack along other CLIs:
 1. `devcontainer` - environment isolation
@@ -38,7 +38,7 @@ Assisted-by: `<name-of-code-assistant>`
 
 ## Just Pre-Commit
 
-`just pre-commit` is configured to run all CLIs.  
+`just pre-commit` is configured to run all CLIs (including tests).  
 To run, simply:
 
 ```shell
@@ -51,6 +51,14 @@ Before editing anything, **ALWAYS** start with `just p`.
 Running a CLI directly is a last resort.  
 
 ## Code
+
+Follow the Test-Driven-Developement (TDD) methodology.
+
+When reading code, files or terminal outputs - try to read
+necessary lines and information only, to reduce token usage.
+You may use `grep`, `sed`, `head`, `tail`, `jq`, `xargs` and so on.
+
+Try to keep files shorter than 500 lines.
 
 Any code or file significantly generated or edited by you
 must have at least one inline/header comment:  
