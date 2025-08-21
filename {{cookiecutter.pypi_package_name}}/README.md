@@ -85,7 +85,7 @@ We welcome contributions! Please see our
 The current MCP servers that this repo supports are:
 1. [`github-mcp-server`](https://github.com/github/github-mcp-server) (Remote)
 2. [`repomix`](https://github.com/yamadashy/repomix) (Local)
-3. [`mcp-language-server`](https://github.com/isaacphi/mcp-language-server)
+3. [`mcp-language-server`](https://github.com/isaacphi/mcp-language-server) (Local)
 
 #### [Claude Code](https://www.anthropic.com/claude-code)
 

@@ -241,7 +241,7 @@ Closes #(issue number)
 2. **Create a release tag**
 
    ```bash
-   just bump minor  # or `just b minor`
+   just bump patch  # or `just b patch`
    ```
 
 3. **GitHub Actions** will automatically build and publish to PyPI

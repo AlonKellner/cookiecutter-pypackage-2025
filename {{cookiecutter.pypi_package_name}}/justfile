@@ -22,4 +22,6 @@ test *ARGS:
 # bump the version (major/minor/patch/alpha)
 bump *ARGS:
     hatch version {{ARGS}}
+    git push
+    git push --tags
 {% endraw %}

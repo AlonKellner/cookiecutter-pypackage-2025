@@ -67,13 +67,30 @@
 
 ### Optional Steps
 
-*   [Register](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives) your project with PyPI.
-*   Release your package by pushing a new tag to master.
+*   Release your first version:
+    *   Login to [pypi.org](https://pypi.org/)
+        *   Got to [the publishing page](https://pypi.org/manage/account/publishing/)
+        *   Configure a GitHub publisher
+        *   Make sure to set the `Workflow name` to `publish.yml`
+        *   Make sure to **NOT** set the value of `Environment name`
+    *   In your repo, run `just bump alpha`
+    *   Your version will uploaded to pypi by GitHub Actions
 *   To activate the docs using github-pages:
-    * Go to your repository on GitHub
-    * `Settings -> Pages -> Build and deployment -> Branch`
-    * Select `gh-pages`
-    * Open your docs under `https://your-username.github.com/your-repo-name`
+    *   Go to your repository on GitHub
+    *   `Settings -> Pages -> Build and deployment -> Branch`
+    *   Select `gh-pages`
+    *   Open your docs under `https://<your-username>.github.com/<your-repo-name>`
+*   To enable the github actions CI workflow:
+    *   Create a `DOCKERHUB_TOKEN`:
+        *   Login to [DockerHub](https://app.docker.com/)
+        *   `Settings -> Personal access tokens -> Generate new token`
+        *   Make sure to set the `Access permissions` to `Read & Write`
+        *   Copy and keep your new `DOCKERHUB_TOKEN` for the next steps
+    *   Configure your DockerHub user on GitHub:
+        *   Go to your repository on GitHub
+        *   `Settings -> Secrets and Variables -> Actions -> Branch`
+        *   Create a new variable called `DOCKERHUB_USERNAME` for pushing CI images
+        *   Create a new secret called `DOCKERHUB_TOKEN` for pushing CI images
 
 ## Not Exactly What You Want?
 
