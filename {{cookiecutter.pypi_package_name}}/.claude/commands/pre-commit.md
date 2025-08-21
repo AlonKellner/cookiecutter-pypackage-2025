@@ -53,8 +53,7 @@ the diff that lack corresponding tests.
 
 ````markdown
 `[CRITICAL]`
-A brief, high-confidence description of the complex issue
-(e.g., this looks like a potential SQL injection vulnerability).
+This looks like a potential **SQL injection** vulnerability.
 ```python
 ┌───┌─ path/to/file.py:125
 │...│
