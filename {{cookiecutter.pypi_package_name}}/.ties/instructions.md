@@ -1,6 +1,6 @@
 # Instructions
 
-## General Information
+## Tooling
 
 This python (3.13) repo uses the astral.sh stack along other CLIs:
 1. `devcontainer` - environment isolation

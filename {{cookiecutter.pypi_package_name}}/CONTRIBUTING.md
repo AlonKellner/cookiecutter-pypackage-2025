@@ -17,47 +17,44 @@ There are many ways to contribute to {{ cookiecutter.project_name }}:
 ## 🚀 Development Setup
 
 ### Prerequisites
-- [Docker](https://www.docker.com/get-started/)
-- [VSCode](https://code.visualstudio.com/download)/[Cursor](https://cursor.com/downloads) (or any IDE with [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) support)
+* [Docker](https://www.docker.com/get-started/)
+* [VSCode](https://code.visualstudio.com/download)/[Cursor](https://cursor.com/downloads) (or any IDE with [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) support)
+* [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+* [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 
-#### Steps
+### Steps
 
-Either click the badge (VSCode only)  
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/{{ cookiecutter.__gh_slug }})  
-or (Cursor/VSCode)
+* `git clone https://github.com/{{ cookiecutter.__gh_slug }}.git`
+* Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
 
-1. `git clone https://github.com/{{ cookiecutter.__gh_slug }}.git`
-2. Open the repository in your IDE of choice
-3. `cmd+shift+p`/`ctrl+shift+p`
-4. Type "reopen"
-5. Choose "Dev Containers: Reopen in Container"
-
-   This will automatically:
-
-   - Build and start a devcontainer with binary requirements
-   - Install the `pre-commit` hooks
-   - Use `uv` to install python and all python dependencies into a local `.venv`
-   - Install a few MCP servers
-
-   The first time it will fail and prompt you for 3 things:
-
-- Add a [github access token](https://github.com/settings/personal-access-tokens) to ./.devcontainer/.env:
-
-  ```sh
-  GITHUB_PERSONAL_ACCESS_TOKEN=<your_personal_access_token_here>
+  ```bash
+  echo "GITHUB_PERSONAL_ACCESS_TOKEN=<token-here>" > ./.devcontainer/.env
   ```
 
-- [Generate a GPG key and add it to github](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
-- [Configure a GPG key as your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
+* Open using VSCode (or Cursor):
+  * `ctrl+shift+p`/`cmd+shift+p`
+  * Type "Reopen"
+  * Select `Reopen in Container`
+  * Wait until everything finished loading/running
 
-#### MCP
+* Init commit:
+
+  ```bash
+  git add .
+  git commit -m "init: cookiecutter"
+  git push
+  ```
+
+* Start using your new repo!
+
+### MCP
 
 The current MCP servers that this repo supports are:
 1. [`github-mcp-server`](https://github.com/github/github-mcp-server) (Remote)
 2. [`repomix`](https://github.com/yamadashy/repomix) (Local)
-3. [`mcp-language-server`](https://github.com/isaacphi/mcp-language-server)
+3. [`mcp-language-server`](https://github.com/isaacphi/mcp-language-server) (Local)
 
-#### [Claude Code](https://www.anthropic.com/claude-code)
+### [Claude Code](https://www.anthropic.com/claude-code)
 
 The `pre-commit` setup in this repo uses `claude` code to
 automatically review changes.  
@@ -94,8 +91,8 @@ This python (3.13) repo uses the astral.sh stack along other CLIs:
 22. `tox-toml-fmt` - tox.toml format and lint
 
 This stack seems overwhelming, but you will never need to dive into
-any of it.
-This stack managed by `devcontainers`, `pre-commit` and `just`,
+any of it.  
+This stack is managed by `devcontainers`, `pre-commit` and `just`,
 thanks to those tools it's easy to setup and easy to use even
 without tool specific knowledge.
 
@@ -132,12 +129,11 @@ tests/                      # Tests to run every commit (fast)
 └── data/                   # Test data files
     ├── sample_config.toml
     └── expected_output.txt
-integration-tests/          # Tests to run manually (slow)
+some-other-tests/          # Tests to run manually (slow)
 ├── test_module.py          # Tests for specific module
 └── data/                   # Test data files
     ├── sample_config.toml
     └── expected_output.txt
-
 ```
 
 ## 📚 Documentation
@@ -180,7 +176,7 @@ Just push a change in the `docs` folder and open a pull request.
    ```
 
 5. **Create a pull request**
-   - Use the PR template
+   - Use the PR template s
    - Describe your changes clearly
    - Link any related issues
    - Request reviews from maintainers
@@ -206,34 +202,6 @@ When reporting issues, please include:
 - **Expected vs actual behavior**
 - **Environment details** (OS, Python version, etc.)
 - **Code examples** if applicable
-
-## 📋 Pull Request Template
-
-```markdown
-## Description
-Brief description of changes
-
-## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Documentation update
-- [ ] Code refactoring
-- [ ] Other (please describe)
-
-## Testing
-- [ ] Tests pass locally
-- [ ] New tests added for new functionality
-- [ ] All existing tests pass
-
-## Checklist
-- [ ] Code follows style guidelines
-- [ ] Self-review completed
-- [ ] Documentation updated
-- [ ] Changes documented in CHANGELOG.md
-
-## Related Issues
-Closes #(issue number)
-```
 
 ## 🏷️ Release Process
 
