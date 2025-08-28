@@ -4,7 +4,6 @@
 
 *   GitHub repo: [https://github.com/AlonKellner/cookiecutter-pypackage-2025/](https://github.com/AlonKellner/cookiecutter-pypackage-2025/)
 *   Free software: MIT license
-*   Discord: [https://discord.gg/PWXJr3upUE](https://discord.gg/PWXJr3upUE)
 
 ## Features
 
