@@ -99,6 +99,13 @@ repos:
         language: system
         always_run: true
         pass_filenames: false
+      - id: uv-pylock
+        name: uv pip compile (pylock.toml)
+        description: generate `pylock.toml` from `pyproject.toml`
+        entry: bash -c "rm -f pylock.toml && uv pip compile pyproject.toml --group dev -o pylock.toml"
+        language: system
+        always_run: true
+        pass_filenames: false
       - id: pip-audit
         name: pip-audit (requirements.txt)
         description: check for known vulnerabilities in dependencies
